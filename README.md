@@ -6,7 +6,7 @@ O projeto consiste em um case técnico para a vaga de Analista de Dados na empre
 
 ## Diagrama Entidade Relacionamento do Banco Ecommerce
 
-![](ER_Diagram.png)
+![](Artefatos/ER_Diagram.png)
 
 O diagrama acima foi criado utilizando a ferramenta [DBeaver](https://dbeaver.io/).
 
@@ -128,7 +128,7 @@ merge_data_sources(
     df_jdbc=product_lines, 
     df_parquet=product_lines_parquet, 
     key="product_line", 
-    path_to_parquet="/FileStore/CaseTecnico/product_lines"
+    path_to_parquet="/FileStore/CaseTecnico/product_lines.parquet"
 )
 ```
 
@@ -201,3 +201,15 @@ merge_data_sources(
 |   Yoshimi|     Kato| y***o@classicmodelcars.com|
 +----------+---------+---------------------------+
 ```
+
+### 5. Salvar os resultados em arquivos Delta
+
+Todos os dataframes gerados como resultado das operações anteriores foram salvos como arquivos Delta:
+
+- Q1: `cancelled_count_by_country.delta`
+- Q2: `revenue_product_line.delta`
+- Q3: `japan_employees.delta`
+
+## Arquivos
+
+Todos os arquivos utilizados no projeto - parquet e delta - estão disponíveis na pasta [Artefatos](Artefatos).

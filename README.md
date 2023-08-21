@@ -2,7 +2,7 @@
 
 ## Descrição do Projeto
 
-O projeto consiste em um case técnico para a vaga de Analista de Dados na empresa [Join Tecnologias & Design](https://www.linkedin.com/company/join-ti/). O objetivo é utlilizar a base de dados de um e-commerce - disponível em  [https://uibakery.io/sql-playground](https://uibakery.io/sql-playground) - para realizar algumas ações e responder algumas perguntas, descritas no documento enviado por e-mail, utilizando um notebook do Databricks.
+O objetivo é utlilizar a base de dados de um e-commerce - disponível em  [https://uibakery.io/sql-playground](https://uibakery.io/sql-playground) - para realizar algumas ações e responder algumas perguntas utilizando um notebook do Databricks.
 
 ## Diagrama Entidade Relacionamento do Banco Ecommerce
 
